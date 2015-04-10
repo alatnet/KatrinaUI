@@ -69,4 +69,13 @@ public class ModuleApp implements KatrinaModule {
     public String getUniqueID() {
         return this.name;
     }
+
+    @Override
+    public void initialize(Context context) {}
+
+    @Override
+    public void stop() {}
+
+    @Override
+    public void setContext(Context c) {}
 }

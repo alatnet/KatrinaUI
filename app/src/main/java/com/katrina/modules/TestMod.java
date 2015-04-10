@@ -39,20 +39,26 @@ public class TestMod implements KatrinaModule {
     }
 
     @Override
-    public MOD_TYPE getModuleType() { return MOD_TYPE.MODULE; }
+    public MOD_TYPE getModuleType() {
+        return MOD_TYPE.MODULE;
+    }
 
     @Override
-    public void setID(int id) {}
+    public void setID(int id) {
+    }
 
     @Override
-    public void registerEmergencyListener(EmergencyListener emergencyListener) { this.emergencyListener = emergencyListener; }
+    public void registerEmergencyListener(EmergencyListener emergencyListener) {
+        this.emergencyListener = emergencyListener;
+    }
 
     @Override
-    public void registerKMListener(KatrinaModuleListener kmListener) {}
+    public void registerKMListener(KatrinaModuleListener kmListener) {
+    }
 
     @Override
     public void setActive(boolean active) {
-        Log.i("TestMod.setActive",Boolean.toString(active));
+        Log.i("TestMod.setActive", Boolean.toString(active));
         this.active = active;
     }
 
@@ -67,7 +73,8 @@ public class TestMod implements KatrinaModule {
     }
 
     @Override
-    public void setContext(Context c) {}
+    public void setContext(Context c) {
+    }
 
     @Override
     public void initialize(Context context) {
@@ -76,11 +83,5 @@ public class TestMod implements KatrinaModule {
 
     @Override
     public void stop() {
-
-    }
-
-    public void setContext(Context context)
-    {
-
     }
 }

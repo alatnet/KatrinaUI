@@ -62,6 +62,9 @@ public class FallDetectorModule implements KatrinaModule {
     }
 
     @Override
+    public void setContext(Context c) {}
+
+    @Override
     public Drawable getIconImage() {
         return null;
     }

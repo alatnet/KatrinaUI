@@ -36,6 +36,15 @@ import java.util.List;
 //TODO Home and Back button events. Home and Back must bring screen back to home screen when in app list.
 
 public class MainUI extends Activity implements View.OnClickListener, View.OnLongClickListener, EmergencyListener {
+    //Generate random UUID's
+    static {
+        Log.i("RandomUUID", java.util.UUID.randomUUID().toString());
+        Log.i("RandomUUID", java.util.UUID.randomUUID().toString());
+        Log.i("RandomUUID", java.util.UUID.randomUUID().toString());
+        Log.i("RandomUUID", java.util.UUID.randomUUID().toString());
+        Log.i("RandomUUID", java.util.UUID.randomUUID().toString());
+    }
+
     private GridView moduleGridView;  //Grid list of modules and APK apps on home screen.
     private ModuleAdapter moduleAdapter; //adapter to manage the modules displayed on the home screen.
     private ListView appsListView; //list view of applications installed on phone

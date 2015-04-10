@@ -17,7 +17,6 @@ import java.util.UUID;
  * Created by kyle on 4/5/2015.
  */
 public class PillReminderModule implements KatrinaModule {
-
     /**
      * ID to be set.
      */
@@ -105,4 +104,7 @@ public class PillReminderModule implements KatrinaModule {
     public void stop() {
 
     }
+
+    @Override
+    public void setContext(Context c) {}
 }
